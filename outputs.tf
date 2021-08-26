@@ -19,10 +19,6 @@ output "lambda_function_qualified_arn" {
   value       = element(concat(aws_lambda_function.task-7s-lambda-check-lb.*.qualified_arn, [""]), 0)
 }
 
-output "lambda_function_version" {
-  description = "Latest published version of Lambda Function"
-  value       = element(concat(aws_lambda_function.task-7s-lambda-check-lb.*.version, [""]), 0)
-}
 
 output "lambda_function_last_modified" {
   description = "The date Lambda Function resource was last modified"

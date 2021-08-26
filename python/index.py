@@ -2,7 +2,7 @@ def lambda_handler(event, context):
     
     print("Hello from 7s-lb-checker!")
     
-    import boto3
+
 
 #create rule variable ACTION
 #example 'Actions': [{'Type': 'redirect', 'Order': 1, 'RedirectConfig': {'Protocol': 'HTTPS', 'Port': '443', 'Host': '#{host}', 'Path': '/#{path}', 'Query': '#{query}', 'StatusCode': 'HTTP_301'}}]
@@ -21,7 +21,7 @@ def lambda_handler(event, context):
     }]
     
     
-
+    import boto3
 
     client = boto3.client('elbv2')
     

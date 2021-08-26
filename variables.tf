@@ -1,3 +1,5 @@
+#edit credentials in variables.tf access_key and secret
+
 variable "aws_access_key" {
   description = "AWS Access Key ID."
   default = "YOUR_ACESS_KEY"

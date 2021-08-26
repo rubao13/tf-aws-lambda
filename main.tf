@@ -67,6 +67,7 @@ resource "aws_lambda_function" "task-7s-lambda-check-lb"{
 
 }
 
+#edit schedule_expression to change schedule 
 resource "aws_cloudwatch_event_rule" "every_day_2am" {
   name                = "every_day_2am"
   description         = "Fires every day 2am"
